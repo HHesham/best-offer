@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GitRootDir>../../../</GitRootDir>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>./obj/$(AssemblyName).xml</DocumentationFile>
+    <NoWarn>1591;1701;1702;1587</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="src\Models\Requests\" />
+    <None Remove="src\Models\Responses\" />
+    <None Remove="src\Domains\" />
+    <None Remove="src\Client\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\Models\Requests\" />
+    <Folder Include="src\Models\Responses\" />
+    <Folder Include="src\Domains\" />
+    <Folder Include="src\Client\" />
+  </ItemGroup>
+</Project>
