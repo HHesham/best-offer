@@ -9,7 +9,7 @@ using System;
 using Microsoft.Extensions.Logging;
 using System.Text.Json.Serialization;
 
-namespace Katamai.TrainingService
+namespace BestOffer
 {
     public class Startup
     {
@@ -33,6 +33,7 @@ namespace Katamai.TrainingService
                     options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
                 });
             services.AddDomains();
+            services.AddClients(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

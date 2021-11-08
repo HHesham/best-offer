@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Serialization;
 
-namespace BestOffer.src.Models.Requests
+namespace BestOffer.Models.Requests
 {
     [XmlRoot(ElementName = "Request", Namespace = "")]
     public class CompanyCOffersRequest

@@ -25,9 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../src/Katamai.TrainingService.csproj" />
-    <ProjectReference Include="../API/Katamai.TrainingService.API.csproj" />
-    <ProjectReference Include="$(GitRootDir)libraries/lu-tests-utils/src/Katamai.Tests.Utils.csproj" />
+    <ProjectReference Include="..\src\BestOffer.csproj" />
   </ItemGroup>
 
   <ItemGroup>

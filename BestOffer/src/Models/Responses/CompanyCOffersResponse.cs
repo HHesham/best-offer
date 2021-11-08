@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Xml.Serialization;
 
-namespace BestOffer.src.Models.Responses
+namespace BestOffer.Models.Responses
 {
     [XmlRoot(ElementName = "Response")]
-    public class CompanyCOffersResponse : OffersRequest
+    public class CompanyCOffersResponse : OffersResponse
     {
         public CompanyCOffersResponse()
         {

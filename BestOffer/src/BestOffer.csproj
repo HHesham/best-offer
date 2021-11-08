@@ -11,15 +11,13 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="src\Models\Requests\" />
-    <None Remove="src\Models\Responses\" />
-    <None Remove="src\Domains\" />
-    <None Remove="src\Client\" />
+    <None Remove="xunit" />
+    <None Remove="RichardSzalay.MockHttp" />
+    <None Remove="Moq" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\Models\Requests\" />
-    <Folder Include="src\Models\Responses\" />
-    <Folder Include="src\Domains\" />
-    <Folder Include="src\Client\" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="RichardSzalay.MockHttp" Version="6.0.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
   </ItemGroup>
 </Project>

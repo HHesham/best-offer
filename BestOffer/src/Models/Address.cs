@@ -1,5 +1,5 @@
 ﻿using System;
-namespace BestOffer.src.Models
+namespace BestOffer.Models
 {
     public class Address
     {

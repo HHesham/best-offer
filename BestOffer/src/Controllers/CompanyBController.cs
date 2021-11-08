@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
-using BestOffer.src.Domains;
-using BestOffer.src.Models.Requests;
-using BestOffer.src.Models.Responses;
+using BestOffer.Domains;
+using BestOffer.Models.Requests;
+using BestOffer.Models.Responses;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace BestOffer.src.Controllers
+namespace BestOffer.Controllers
 {
     [ApiController]
     [Route("/api/v1/[controller]/")]

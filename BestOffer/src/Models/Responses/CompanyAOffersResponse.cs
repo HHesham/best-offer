@@ -1,7 +1,7 @@
 ﻿using System;
-namespace BestOffer.src.Models.Responses
+namespace BestOffer.Models.Responses
 {
-    public class CompanyAOffersResponse : OffersRequest
+    public class CompanyAOffersResponse : OffersResponse
     {
         public CompanyAOffersResponse()
         {

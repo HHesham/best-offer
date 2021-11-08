@@ -1,0 +1,24 @@
+{
+    "Source":{
+        "lat":1.1,
+        "lng":2.2
+    },
+    "Destination":{
+        "lat":10.1,
+        "lng":15.2
+    },
+    "Dimensions":
+    [
+        {
+            "length":10.0,
+            "width":11,
+            "height":20
+        }
+    ],
+    "Urls":
+    {
+        "CompanyA":"http://localhost/api/v1/companyA/offers" ,
+        "CompanyB":"http://localhost/api/v1/companyB/offers" ,
+        "CompanyC":"http://localhost/api/v1/companyC/offers" 
+    }
+}

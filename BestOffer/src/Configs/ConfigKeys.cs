@@ -1,7 +1,10 @@
-namespace Katamai.TrainingService.Configs
+namespace BestOffer.Configs
 {
-    internal static class ConfigKeys
+    public class ConfigKeys
     {
-        public const string KatamaiSwaggerEnabled = "Katamai:Swagger:IsEnabled";
+        public string ServiceUrl { get; set; }
+        public string CompanyAKey {get; set;}
+        public string CompanyBKey { get; set; }
+        public string CompanyCKey { get; set; }
     }
 }

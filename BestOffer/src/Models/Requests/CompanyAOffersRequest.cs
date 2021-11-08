@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BestOffer.src.Models.Requests
+namespace BestOffer.Models.Requests
 {
     public class CompanyAOffersRequest
     {

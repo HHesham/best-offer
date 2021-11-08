@@ -2,10 +2,11 @@
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
+using BestOffer.Configs;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
-namespace BestOffer.src.Client
+namespace BestOffer.Client
 {
 
     public class OffersHttpClient
@@ -13,11 +14,11 @@ namespace BestOffer.src.Client
         private readonly HttpClient _client;
         private readonly ILogger<OffersHttpClient> _logger;
 
-        public OffersHttpClient(HttpClient client, IConfiguration config, ILogger<OffersHttpClient> logger)
+        public OffersHttpClient(HttpClient client, IOptions<ConfigKeys> config, ILogger<OffersHttpClient> logger)
         {
             _logger = logger;
             _client = client;
-            _client.BaseAddress = new Uri(config["BestOffers:ServiceUrl"]);
+            _client.BaseAddress = new Uri(config.Value.ServiceUrl);
         }
 
         public async Task<string> OnGetAsync(string uri)

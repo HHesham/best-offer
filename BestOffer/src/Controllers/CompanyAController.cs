@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using BestOffer.src.Domains;
-using BestOffer.src.Models.Requests;
-using BestOffer.src.Models.Responses;
+using BestOffer.Domains;
+using BestOffer.Models.Requests;
+using BestOffer.Models.Responses;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -32,19 +32,3 @@ namespace BestOffer.Controllers
         }
     }
 }
-
-
-
-
-/*
- * 
- * 
-- Input: Different signatures(name and params)
-    int MyMethod(int i) { ... }
-    int MyMethod(double d) { ... }
-- Output: Differetn format
-
-- APIs: different urls and credentials 
-
-offer obj: id, value, expirateion date
- */

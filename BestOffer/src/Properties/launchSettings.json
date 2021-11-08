@@ -15,8 +15,10 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Katamai.TrainingService": {
-      "commandName": "Project"
+    "BestOffer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5000"
     }
   }
 }

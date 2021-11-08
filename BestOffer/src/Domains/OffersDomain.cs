@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
-using BestOffer.src.Models.Responses;
+using BestOffer.Models.Responses;
 using Microsoft.Extensions.Logging;
-using BestOffer.src.Models.Requests;
+using BestOffer.Models.Requests;
 
-namespace BestOffer.src.Domains
+namespace BestOffer.Domains
 {
     public class OffersDomain
     {
@@ -26,7 +26,9 @@ namespace BestOffer.src.Domains
             {
                 return new CompanyAOffersResponse
                 {
-                    Total = 10.0
+                    Total = 10.0,
+                    Id = Guid.NewGuid(),
+                    Description = "CompanyA offer"
                 };
             });
             return response;
@@ -44,7 +46,9 @@ namespace BestOffer.src.Domains
             {
                 return new CompanyBOffersResponse
                 {
-                    Amount = 30.0
+                    Amount = 30.0,
+                    Id = Guid.NewGuid(),
+                    Description = "CompanyB offer"
                 };
             });
             return response;
@@ -62,7 +66,9 @@ namespace BestOffer.src.Domains
             {
                 return new CompanyCOffersResponse
                 {
-                    Quote = 20.0
+                    Quote = 20.0,
+                    Id = Guid.NewGuid(),
+                    Description = "CompanyC offer"
                 };
             });
             return response;

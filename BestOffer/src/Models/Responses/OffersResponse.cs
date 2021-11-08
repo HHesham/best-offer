@@ -1,9 +1,9 @@
 ﻿using System;
-namespace BestOffer.src.Models.Responses
+namespace BestOffer.Models.Responses
 {
-    public class OffersRequest
+    public class OffersResponse
     {
-        public OffersRequest()
+        public OffersResponse()
         {
         }
 
